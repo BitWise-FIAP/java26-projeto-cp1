@@ -32,6 +32,7 @@
                 <version>4.0.3</version>
                 <executions>
                     <execution>
+                        <phase>generate-sources</phase>
                         <goals>
                             <goal>wsimport</goal>
                         </goals>
@@ -39,10 +40,10 @@
                 </executions>
                 <configuration>
                     <wsdlUrls>
-
+                        <wsdlUrl>http://localhost:8085/WineStockService?wsdl</wsdlUrl>
                     </wsdlUrls>
                     <keep>true</keep>
-                    <packageName>br.com.fiap.winery</packageName>
+                    <packageName>br.com.fiap.winery.stubclasses</packageName>
                     <sourceDestDir>src/main/java</sourceDestDir>
                 </configuration>
             </plugin>
