@@ -6,7 +6,7 @@ public class Loader {
     public static void main(String[] args) {
         WineStockServiceImplementation wineStock = new WineStockServiceImplementation();
 
-        Endpoint.publish("http://localhost:8085/WineStockSercvice", wineStock);
+        Endpoint.publish("http://localhost:8085/WineStockService", wineStock);
 
         System.out.println("Serviço publicado");
     }
